@@ -1,0 +1,10 @@
+# Step 2. Use the loc method on the student_data_df to select all the reading scores from the 9th grade at Thomas High School and replace them with NaN.
+#student_data_df.loc[(student_data_df["school_name"] == "Thomas High School" & student_data_df["grade"] == "9th"),'reading_score'] = 0
+#student_data_df.head(200)
+student_data_df.loc[(student_data_df["school_name"] == "Thomas High School") & (student_data_df["grade"] == "9th") ,'reading_score']= np.nan
+student_data_df.head(200)
+
+
+#  Step 3. Refactor the code in Step 2 to replace the math scores with NaN.
+student_data_df.loc[(student_data_df["school_name"] == "Thomas High School") & (student_data_df["grade"] == "9th") ,'math_score']= np.nan
+student_data_df.head(200)
